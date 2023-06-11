@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+<title> Password Vault </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="landing page, website design" />
+  <script src="scripts/jquery.min.js"></script>
+
+  <script src="scripts/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="scripts/bootstrap.min.css">
+
+<script src="scripts/app_script.js"></script>
+<link type="text/css" rel="stylesheet" href="scripts/store.css">
+<script src="scripts/session.js"></script>
+
+
+</head>
+<body>
+
+
+
+<div class="text-center">
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navgator">
+        <span class="navbar-header-collapse-color icon-bar"></span>
+        <span class="navbar-header-collapse-color icon-bar"></span>
+        <span class="navbar-header-collapse-color icon-bar"></span> 
+        <span class="navbar-header-collapse-color icon-bar"></span>                       
+      </button>
+     
+<li class="navbar-brand home_click imagelogo_li_remove" ><img class="img-rounded imagelogo_data" src="logo.png"></li>
+    </div>
+    <div class="collapse navbar-collapse" id="navgator">
+
+      <ul class="nav navbar-nav navbar-right">
+
+<li class="navgate">
+
+<button data-toggle="modal" data-target="#myModal_vault" class="invite_btnx btn btn-warning" title='Create Password Vault'>Create New Password Vaults </button>
+
+</li>
+
+
+<li class="navgate">
+
+<button class="invite_btnx btn btn-warning"><a style="color:white;" href='logout.html' title='Logout'>Logout</a></button>
+
+</li>
+</ul>
+
+
+
+
+
+    </div>
+  </div>
+
+
+</nav>
+
+
+    </div><br />
+<br /><br />
+
+
+
+<div style='width:100vw; height: 100vh;  min-height:600px;'>
+ 
+
+<div class='row'>
+
+<center><h2>Password Vaults Dashboard</h2></center>
+
+<div class='col-sm-12'>
+
+Welcome: <span style='color:purple;font-size:16px' class='fullname_sess'></span> (<span style='color:#800000;font-size:16px' class='email_sess'></span>) 
+
+</div></div>
+
+
+
+
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="#">.</a></div>
+
+
+<div class='row'>
+
+
+<div id="loader_vault"></div>
+<div id="result_vault"></div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<input type='hidden' class='userid_value' value=''>
+
+<div class='fullname_value' id='fullnameb' value=''></div>
+
+
+
+<!-- Vault  Modal start -->
+
+
+
+<div id="myModal_vault" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header"  style='background: #008080;color:white;padding:10px;'>
+        <h4 class="modal-title">Create Password Vault</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+
+Easily Create, store and Manage your Login Credentials, Passwords, Secrets across Various Site Eg. <b>Facebook, Jira, Gmail, Instagram, Tiktok, youtube etc.</b> all
+in one place within <b>Pangea</b> highly secured Vaults System.<br><br>
+
+
+ <div class="form-group">
+              <label> Enter Login Username/Email</label>
+              <input type="text" class="col-sm-12 form-control" id="emailb" name="emailb" placeholder="Enter Email">
+            </div>
+<br>
+
+ <div class="form-group">
+              <label> Enter Password(Secret) </label>
+              <input type="text" class="col-sm-12 form-control" id="passwordb" name="passwordb" placeholder="Enter Password(Secret)">
+            </div>
+<br>
+
+
+ <div class="form-group">
+              <label>Password/Secret Title Eg. Facebook Login Info, Gmail Login Info</label>
+              <input type="text" class="col-sm-12 form-control" id="title" name="title" placeholder="Eg. Jira Login Info.">
+            </div>
+<br>
+
+
+
+ <div class="form-group">
+              <label> Select Color For Password/Secret Title </label>
+              <input type="color" class="col-sm-12 form-control" id="color" name="color" placeholder="Select color">
+            </div>
+<br>
+
+
+
+ <div class="form-group">
+						<div id="loader_v"></div>
+                        <div id="result_v" class="myform_clean_v"></div>
+                    </div>
+
+                    <input type="button" id="v_btn" class="pull-right btn btn-primary v_btn" value="Submit" />
+
+
+      </div>
+<br><br>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Vaults Modal ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

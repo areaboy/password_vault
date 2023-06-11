@@ -1,0 +1,22 @@
+{
+  "name": "Password Vault",
+  "description": "Secure Your Password and your Secrets all in One Place",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["webNavigation"],
+  "action": { "default_popup": "index.html",
+ "default_icon": {
+
+    "16": "/images/get_started16.png"
+
+    }
+
+ },
+"background": { "service_worker": "background.js" }
+}
+
+
+
+
+
+

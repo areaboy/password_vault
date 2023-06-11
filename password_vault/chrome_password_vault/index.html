@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+<title> Password Vault </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="landing page, website design" />
+  <script src="scripts/jquery.min.js"></script>
+
+  <script src="scripts/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="scripts/bootstrap.min.css">
+
+<script src="scripts/app_script.js"></script>
+<link type="text/css" rel="stylesheet" href="scripts/store.css">
+
+
+</head>
+<body>
+
+
+
+<div class="text-center">
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navgator">
+        <span class="navbar-header-collapse-color icon-bar"></span>
+        <span class="navbar-header-collapse-color icon-bar"></span>
+        <span class="navbar-header-collapse-color icon-bar"></span> 
+        <span class="navbar-header-collapse-color icon-bar"></span>                       
+      </button>
+     
+<li class="navbar-brand home_click imagelogo_li_remove" ><img class="img-rounded imagelogo_data" src="logo.png"></li>
+    </div>
+    <div class="collapse navbar-collapse" id="navgator">
+    </div>
+  </div>
+
+
+
+</nav>
+
+
+    </div><br />
+<br /><br />
+
+
+
+<div style='width:100vw; height: 100vh;  min-height:600px;'>
+ 
+
+<div class='row'>
+
+<center><h2>Password Vaults</h2></center>
+
+<div class='col-sm-12'>
+
+&nbsp;&nbsp;&nbsp; 
+
+A Chrome Extension app that allows <b>Users, Teams, Companies, Organizations etc.</b> to securely store and manage their  various Login Password/Secret Credentials 
+across various <b>Sites, Platforms, Applications</b> etc. all in one
+secured Place.<br><br>
+
+
+For Instance You can store and Manage your Login Credentials, Passwords, Secrets across Various Site Eg. <b>Facebook, Jira, Gmail, Instagram, Tiktok, youtube etc.</b> all
+in one place within <b>Pangea</b> highly secured Vaults System.<br>
+
+</div></div><br>
+
+
+
+
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="#">.</a></div>
+
+
+
+<div class='row'>
+
+<button Class='guard col-sm-4'  data-toggle="modal" data-target="#myModal_create_user"  title="Create User">Create User/SignUp</button>
+
+<button Class='guard col-sm-4'  data-toggle="modal" data-target="#myModal_user_login"  title="User Login">User Login</button>
+
+<button Class='guard2 col-sm-4'  data-toggle="modal" data-target="#myModal_reset_password"  title="Reset Password">Reset Password</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- create User  Modal start -->
+
+
+
+<div id="myModal_create_user" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header"  style='background: #008080;color:white;padding:10px;'>
+        <h4 class="modal-title">Create Users/SignUp</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+
+ <div class="form-group">
+              <label> Enter Email Address </label>
+              <input type="text" class="col-sm-12 form-control" id="email" name="email" placeholder="Enter Email">
+            </div>
+<br>
+
+ <div class="form-group">
+              <label> Enter Password </label>
+              <input type="password" class="col-sm-12 form-control" id="password" name="password" placeholder="Enter Password">
+            </div>
+<br>
+
+
+ <div class="form-group">
+              <label>Confirm Password </label>
+              <input type="password" class="col-sm-12 form-control" id="password_confirm" name="password_confirm" placeholder="Confirm Password">
+            </div>
+<br>
+
+
+
+ <div class="form-group">
+              <label> Enter Fullname </label>
+              <input type="text" class="col-sm-12 form-control" id="fullname" name="fullname" placeholder="Enter Fullname">
+            </div>
+<br>
+
+
+
+
+
+ <div class="form-group">
+						<div id="loader_signup"></div>
+                        <div id="result_signup" class="myform_clean_signup"></div>
+                    </div>
+
+                    <input type="button" id="signup_btn" class="pull-right btn btn-primary signup_btn" value="Create User" />
+
+
+      </div>
+<br><br>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Create User Modal ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- user Login  Modal start -->
+
+
+
+<div id="myModal_user_login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header"  style='background: #008080;color:white;padding:10px;'>
+        <h4 class="modal-title">User Login</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+
+ <div class="form-group">
+              <label> Enter Email Address </label>
+              <input type="text" class="col-sm-12 form-control" id="email1" name="email1" placeholder="Enter Email" value='esedofred@gmail.com'>
+            </div>
+<br>
+
+ <div class="form-group">
+              <label> Enter Password </label>
+              <input type="password" class="col-sm-12 form-control" id="password1" name="password1" placeholder="Enter Password" value='biko67BCaa@B'>
+            </div>
+<br>
+
+
+ <div class="form-group">
+						<div id="loader_login"></div>
+                        <div id="result_login" class="myform_clean_login"></div>
+                    </div>
+
+                    <input type="button" id="login_btn" class="pull-right btn btn-primary login_btn" value="Login" />
+
+
+      </div>
+<br><br>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--User Login Modal ends -->
+
+
+
+
+
+
+
+
+
+
+<!-- Reset Password  Modal start -->
+
+
+
+<div id="myModal_reset_password" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header"  style='background: #008080;color:white;padding:10px;'>
+        <h4 class="modal-title">Reset Password</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+
+ <div class="form-group">
+              <label> Enter Email Address </label>
+              <input type="text" class="col-sm-12 form-control" id="emailx" name="emailx" placeholder="Enter Email">
+            </div>
+<br>
+
+ <div class="form-group">
+              <label> Enter New Password </label>
+              <input type="password" class="col-sm-12 form-control" id="passwordx" name="passwordx" placeholder="Enter New Password">
+            </div>
+<br>
+
+
+ <div class="form-group">
+              <label>Confirm New Password </label>
+              <input type="password" class="col-sm-12 form-control" id="password_confirmx" name="password_confirmx" placeholder="Confirm New Password">
+            </div>
+<br>
+
+
+
+
+
+ <div class="form-group">
+						<div id="loader_reset_password"></div>
+                        <div id="result_reset_password" class="myform_clean_reset_password"></div>
+                    </div>
+
+                    <input type="button" id="reset_password_btn" class="pull-right btn btn-primary reset_password_btn" value="Reset Password Now" />
+
+
+      </div>
+<br><br>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Reset Password User Modal ends -->
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
